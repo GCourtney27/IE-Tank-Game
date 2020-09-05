@@ -1,0 +1,469 @@
+{
+    "Set": [
+        {
+            "Type": "SkySphere",
+            "DisplayName": "Sky Sphere Actor",
+            "Transform": [
+                {
+                    "posX": 0.0,
+                    "posY": 0.0,
+                    "posZ": 0.0,
+                    "rotX": 0.0,
+                    "rotY": 0.0,
+                    "rotZ": 0.0,
+                    "scaX": 1.0,
+                    "scaY": 1.0,
+                    "scaZ": 1.0
+                }
+            ],
+            "Sky": [
+                {
+                    "Diffuse": "Textures/Skyboxes/MountainTop/MountainTop_Diff.dds"
+                }
+            ],
+            "Subobjects": []
+        },
+        {
+            "Type": "SkyLight",
+            "DisplayName": "Sky Light Actor",
+            "Transform": [
+                {
+                    "posX": 0.0,
+                    "posY": 0.0,
+                    "posZ": 0.0,
+                    "rotX": 0.0,
+                    "rotY": 0.0,
+                    "rotZ": 0.0,
+                    "scaX": 1.0,
+                    "scaY": 1.0,
+                    "scaZ": 1.0
+                }
+            ],
+            "Sky": [
+                {
+                    "BRDFLUT": "Textures/Skyboxes/ibl_brdf_lut.png",
+                    "Irradiance": "Textures/Skyboxes/MountainTop/MountainTop_IR.dds",
+                    "Environment": "Textures/Skyboxes/MountainTop/MountainTop_EnvMap.dds"
+                }
+            ],
+            "Subobjects": []
+        },
+        {
+            "Type": "PostFxVolume",
+            "DisplayName": "Post-Process Actor",
+            "Transform": [
+                {
+                    "posX": 0.0,
+                    "posY": 0.0,
+                    "posZ": 0.0,
+                    "rotX": 0.0,
+                    "rotY": 0.0,
+                    "rotZ": 0.0,
+                    "scaX": 1.0,
+                    "scaY": 1.0,
+                    "scaZ": 1.0
+                }
+            ],
+            "PostFx": [
+                {
+                    "vnInnerRadius": 0.10000000149011612,
+                    "vnOuterRadius": 1.0,
+                    "vnOpacity": 1.0,
+                    "vnEnabled": true
+                },
+                {
+                    "fgStrength": 16.0,
+                    "fgEnabled": false
+                },
+                {
+                    "caIntensity": 16.0,
+                    "caEnabled": false
+                }
+            ],
+            "Subobjects": []
+        },
+        {
+            "Type": "Actor",
+            "DisplayName": "Rusted Orb",
+            "Transform": [
+                {
+                    "posX": 23.0955810546875,
+                    "posY": 14.002866744995118,
+                    "posZ": 3.4486937522888185,
+                    "rotX": 0.0,
+                    "rotY": 0.0,
+                    "rotZ": 0.0,
+                    "scaX": 6.399999618530273,
+                    "scaY": 6.399999618530273,
+                    "scaZ": 6.399999618530273
+                }
+            ],
+            "Subobjects": [
+                {
+                    "StaticMesh": [
+                        {
+                            "Mesh": "Models/Sphere.obj",
+                            "Enabled": true,
+                            "LocalTransform": [
+                                {
+                                    "posX": 0.0,
+                                    "posY": -0.15000000596046449,
+                                    "posZ": 0.0,
+                                    "rotX": 0.0,
+                                    "rotY": 0.0,
+                                    "rotZ": 0.0,
+                                    "scaX": 1.0,
+                                    "scaY": 1.0,
+                                    "scaZ": 1.0
+                                }
+                            ]
+                        },
+                        {
+                            "Category": 0,
+                            "AlbedoMapID": 1,
+                            "NormalMapID": 2,
+                            "MetallicMapID": 4,
+                            "RoughnessMapID": 3,
+                            "AOMapID": 5,
+                            "uvOffset": [
+                                {
+                                    "x": 0.0,
+                                    "y": 0.0
+                                }
+                            ],
+                            "Tiling": [
+                                {
+                                    "u": 1.0,
+                                    "v": 1.0
+                                }
+                            ],
+                            "Color_Override": [
+                                {
+                                    "r": 0.0,
+                                    "g": 0.0,
+                                    "b": 0.0
+                                }
+                            ],
+                            "Metallic_Override": 0.0,
+                            "Roughness_Override": 0.0
+                        }
+                    ]
+                },
+                {
+                    "CSharpScript": [
+                        {
+                            "ModuleName": "Rotator",
+                            "Enabled": true
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "Type": "Actor",
+            "DisplayName": "Flower",
+            "Transform": [
+                {
+                    "posX": 51.769989013671878,
+                    "posY": -4.571300029754639,
+                    "posZ": 3.4486939907073976,
+                    "rotX": 0.0,
+                    "rotY": 0.0,
+                    "rotZ": 0.0,
+                    "scaX": 6.399999618530273,
+                    "scaY": 6.399999618530273,
+                    "scaZ": 6.399999618530273
+                }
+            ],
+            "Subobjects": [
+                {
+                    "StaticMesh": [
+                        {
+                            "Mesh": "Models/Quad.obj",
+                            "Enabled": true,
+                            "LocalTransform": [
+                                {
+                                    "posX": 0.0,
+                                    "posY": -0.15000000596046449,
+                                    "posZ": 0.0,
+                                    "rotX": 1.600000023841858,
+                                    "rotY": 0.0,
+                                    "rotZ": 0.0,
+                                    "scaX": 0.20000000298023225,
+                                    "scaY": 0.20000000298023225,
+                                    "scaZ": 0.20000000298023225
+                                }
+                            ]
+                        },
+                        {
+                            "Category": 1,
+                            "AlbedoMapID": 16,
+                            "NormalMapID": 17,
+                            "RoughnessMapID": 18,
+                            "OpacityMapID": 19,
+                            "TranslucencyMapID": 20,
+                            "uvOffset": [
+                                {
+                                    "x": 0.0,
+                                    "y": 0.0
+                                }
+                            ],
+                            "Tiling": [
+                                {
+                                    "u": 1.0,
+                                    "v": 1.0
+                                }
+                            ],
+                            "Color_Override": [
+                                {
+                                    "r": 0.0,
+                                    "g": 0.0,
+                                    "b": 0.0
+                                }
+                            ],
+                            "Metallic_Override": 0.0,
+                            "Roughness_Override": 0.0
+                        }
+                    ]
+                },
+                {
+                    "CSharpScript": [
+                        {
+                            "ModuleName": "Rotator",
+                            "Enabled": true
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "Type": "Actor",
+            "DisplayName": "Wooden Floor",
+            "Transform": [
+                {
+                    "posX": 0.013513565063476563,
+                    "posY": -5.508386611938477,
+                    "posZ": 0.0,
+                    "rotX": 0.0,
+                    "rotY": 0.0,
+                    "rotZ": 0.0,
+                    "scaX": 324.23944091796877,
+                    "scaY": 324.23944091796877,
+                    "scaZ": 324.23944091796877
+                }
+            ],
+            "Subobjects": [
+                {
+                    "StaticMesh": [
+                        {
+                            "Mesh": "Models/Quad.obj",
+                            "Enabled": true,
+                            "LocalTransform": [
+                                {
+                                    "posX": 0.0,
+                                    "posY": 0.0,
+                                    "posZ": 0.0,
+                                    "rotX": 0.0,
+                                    "rotY": 0.0,
+                                    "rotZ": 0.0,
+                                    "scaX": 1.0,
+                                    "scaY": 1.0,
+                                    "scaZ": 1.0
+                                }
+                            ]
+                        },
+                        {
+                            "Category": 0,
+                            "AlbedoMapID": 6,
+                            "NormalMapID": 7,
+                            "MetallicMapID": 8,
+                            "RoughnessMapID": 9,
+                            "AOMapID": 10,
+                            "uvOffset": [
+                                {
+                                    "x": 0.0,
+                                    "y": 0.0
+                                }
+                            ],
+                            "Tiling": [
+                                {
+                                    "u": 15.0,
+                                    "v": 15.0
+                                }
+                            ],
+                            "Color_Override": [
+                                {
+                                    "r": 0.0,
+                                    "g": 0.0,
+                                    "b": 0.0
+                                }
+                            ],
+                            "Metallic_Override": 0.0,
+                            "Roughness_Override": 0.0
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "Type": "Actor",
+            "DisplayName": "Stone Wall",
+            "Transform": [
+                {
+                    "posX": -26.875,
+                    "posY": 2.7149999141693117,
+                    "posZ": 13.482000350952149,
+                    "rotX": -1.569000005722046,
+                    "rotY": 0.0,
+                    "rotZ": 0.0,
+                    "scaX": 16.450559616088868,
+                    "scaY": 16.450557708740236,
+                    "scaZ": 16.450557708740236
+                }
+            ],
+            "Subobjects": [
+                {
+                    "StaticMesh": [
+                        {
+                            "Mesh": "Models/Cube.obj",
+                            "Enabled": true,
+                            "LocalTransform": [
+                                {
+                                    "posX": 0.0,
+                                    "posY": 0.0,
+                                    "posZ": 0.0,
+                                    "rotX": 0.0,
+                                    "rotY": 0.0,
+                                    "rotZ": 0.0,
+                                    "scaX": 1.0,
+                                    "scaY": 1.0,
+                                    "scaZ": 1.0
+                                }
+                            ]
+                        },
+                        {
+                            "Category": 0,
+                            "AlbedoMapID": 11,
+                            "NormalMapID": 12,
+                            "MetallicMapID": 14,
+                            "RoughnessMapID": 13,
+                            "AOMapID": 15,
+                            "uvOffset": [
+                                {
+                                    "x": 0.0,
+                                    "y": 0.0
+                                }
+                            ],
+                            "Tiling": [
+                                {
+                                    "u": 2.0,
+                                    "v": 2.0
+                                }
+                            ],
+                            "Color_Override": [
+                                {
+                                    "r": 0.0,
+                                    "g": 0.0,
+                                    "b": 0.0
+                                }
+                            ],
+                            "Metallic_Override": 0.0,
+                            "Roughness_Override": 0.0
+                        }
+                    ]
+                },
+                {
+                    "CSharpScript": [
+                        {
+                            "ModuleName": "Rotator",
+                            "Enabled": true
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "Type": "PointLight",
+            "DisplayName": "PointLight",
+            "Transform": [
+                {
+                    "posX": -43.502323150634769,
+                    "posY": 10.0,
+                    "posZ": -32.0,
+                    "rotX": 0.0,
+                    "rotY": 0.0,
+                    "rotZ": 0.0,
+                    "scaX": 1.0,
+                    "scaY": 1.0,
+                    "scaZ": 1.0
+                }
+            ],
+            "Emission": [
+                {
+                    "diffuseR": 0.9340000152587891,
+                    "diffuseG": 0.8759999871253967,
+                    "diffuseB": 0.7570000290870667,
+                    "strength": 8.0
+                }
+            ],
+            "Subobjects": []
+        },
+        {
+            "Type": "DirectionalLight",
+            "DisplayName": "DirectionalLight",
+            "Transform": [
+                {
+                    "posX": 0.1997213363647461,
+                    "posY": -2.099811553955078,
+                    "posZ": -6.517000198364258,
+                    "rotX": 0.0,
+                    "rotY": 0.0,
+                    "rotZ": 0.0,
+                    "scaX": 1.0,
+                    "scaY": 1.0,
+                    "scaZ": 1.0
+                }
+            ],
+            "Emission": [
+                {
+                    "diffuseR": 0.6209999918937683,
+                    "diffuseG": 0.6890000104904175,
+                    "diffuseB": 0.6990000009536743,
+                    "strength": 2.109999895095825
+                }
+            ],
+            "Subobjects": []
+        },
+        {
+            "Type": "SpotLight",
+            "DisplayName": "MySpotLight0",
+            "Transform": [
+                {
+                    "posX": 0.0,
+                    "posY": 41.03471374511719,
+                    "posZ": -2.0716986656188967,
+                    "rotX": 0.0,
+                    "rotY": 0.0,
+                    "rotZ": 0.0,
+                    "scaX": 1.0,
+                    "scaY": 1.0,
+                    "scaZ": 1.0
+                }
+            ],
+            "Emission": [
+                {
+                    "diffuseR": 1.0,
+                    "diffuseG": 1.0,
+                    "diffuseB": 1.0,
+                    "directionX": 0.0,
+                    "directionY": -1.0,
+                    "directionZ": 0.0,
+                    "strength": 1.0,
+                    "innerCuttoff": 0.9762960076332092,
+                    "outerCuttoff": 0.9659258127212524
+                }
+            ],
+            "Subobjects": []
+        }
+    ]
+}

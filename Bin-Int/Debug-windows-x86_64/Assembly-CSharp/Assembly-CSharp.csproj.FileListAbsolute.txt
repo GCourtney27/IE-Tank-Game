@@ -1,0 +1,6 @@
+C:\Users\Garre\OneDrive\Documents\Insight Projects\IE-Tank-Game\Bin-Int\Debug-windows-x86_64\Assembly-CSharp\Assembly-CSharp.csproj.CoreCompileInputs.cache
+C:\Users\Garre\OneDrive\Documents\Insight Projects\IE-Tank-Game\Bin\Debug-windows-x86_64\Assembly-CSharp\Assembly-CSharp.dll
+C:\Users\Garre\OneDrive\Documents\Insight Projects\IE-Tank-Game\Bin\Debug-windows-x86_64\Assembly-CSharp\Assembly-CSharp.pdb
+C:\Users\Garre\OneDrive\Documents\Insight Projects\IE-Tank-Game\Bin-Int\Debug-windows-x86_64\Assembly-CSharp\Assembly-CSharp.csprojAssemblyReference.cache
+C:\Users\Garre\OneDrive\Documents\Insight Projects\IE-Tank-Game\Bin-Int\Debug-windows-x86_64\Assembly-CSharp\Assembly-CSharp.dll
+C:\Users\Garre\OneDrive\Documents\Insight Projects\IE-Tank-Game\Bin-Int\Debug-windows-x86_64\Assembly-CSharp\Assembly-CSharp.pdb

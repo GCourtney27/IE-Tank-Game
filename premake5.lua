@@ -1,23 +1,20 @@
 -- Helpful premake documentation
 -- Tokens https://github.com/premake/premake-core/wiki/Tokens
 
-workspace ("TankGame")
-	architecture "x64"
+workspace("IE-Tank-Game")
+architecture "x64"
 
-	configurations
-	{
-		"Debug",
-		"Release",
-		"Dist"
-	}
+configurations
+{
+	"Debug",
+	"Release",
+}
 
+csharpAssemblyProjectName = "Assembly-CSharp"
 outputdir = "%{cfg.buildcfg}-%{cfg.system}-%{cfg.architecture}"
 
-CustomDefines = {}
-CustomDefines["IE_BUILD_DIR"] = "../Bin/" .. outputdir
-
-project ("Assembly-CSharp")
-	location("Assembly-CSharp")
+project (csharpAssemblyProjectName)
+	location(csharpAssemblyProjectName)
 	kind("SharedLib")
 	language("C#")
 	targetdir ("Bin/" .. outputdir .. "/%{prj.name}")
@@ -25,10 +22,16 @@ project ("Assembly-CSharp")
 
 	files
 	{
+		-- Source code
 		"%{prj.name}/Source/**.cs",
 		"%{prj.name}/Source/**.xaml",
 		"%{prj.name}/Source/**.xaml.cs",
-		"%{prj.name}/Source/**.config"
+		"%{prj.name}/Source/**.config",
+		-- Internal
+		"%{prj.name}/Internal/**.cs",
+		"%{prj.name}/Internal/**.xaml",
+		"%{prj.name}/Internal/**.xaml.cs",
+		"%{prj.name}/Internal/**.config"
 	}
 
 	links
@@ -45,9 +48,4 @@ project ("Assembly-CSharp")
 		"System.Xml",
 		"System.Xml.Linq",
 		"WindowsBase",
-	}
-
-	postbuildcommands
-	{
-		--("{COPY} %{wks.location}Bin/"..outputdir.."/%{prj.name}/%{prj.name}.dll %{wks.location}Bin/"..outputdir.."/Engine")
 	}
